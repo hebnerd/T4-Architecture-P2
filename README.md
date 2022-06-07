@@ -1,0 +1,5 @@
+This Computer Architecture project involved creating a simulation of instruction-level parallelism by first designing a 16-bit encoded instruction set, and then simulating instruction pipelining within a CPU. It was written entirely in C#, and a both a console app and WinForms app were used to display and debug the simulation.
+
+The project was designed using Visual Studio 2019, and should be able to be easily imported. After running the WinForms application and loading one of the test binary files, each of which contain a sequence of instructions for basic programs, clicking the "next clock cycle" button will move the program forward, displaying each instruction as it is decoded and then makes its way through each buffer. 
+
+The project was designed to be very modular, each instruction is implemented as its own class, and the core code can be shared amoung multiple projects. As such, there is a console, windows forms, and Unity version of the project which all serve as an interface for the same core simulation. All of the code which relates to architecture of the program can be found in the "PipelineSimulation.Core" project.
